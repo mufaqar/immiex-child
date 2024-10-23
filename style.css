@@ -1,0 +1,20 @@
+/*
+Theme Name:   Immiex Child
+Theme URI:    http://jthemes.org/wp/immiex/
+Description:  Immiex child
+Author:       Jthemes
+Author URI:   http://themeforest.net/user/Jthemes
+Template:     immiex
+Version:      1.0.1
+License: GNU General Public License version 3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+Text Domain:  immiex
+*/
+
+
+
+.headerwp, .wsmainwp {
+  max-width: 100% !important;
+
+}

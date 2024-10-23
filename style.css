@@ -5,16 +5,27 @@ Description:  Immiex child
 Author:       Jthemes
 Author URI:   http://themeforest.net/user/Jthemes
 Template:     immiex
-Version:      1.0.1
+Version:      1.1.1
 License: GNU General Public License version 3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
 Text Domain:  immiex
 */
 
+.wrapper {
+  margin: 0px auto;
+  position: relative;
+}
+.sidebar_content {
+  position: absolute;
+  top: 120px;
+  right: 20%;
+  max-width: 380px;
+  width: 100%;
+  height: 350px;
+}
 
-
-.headerwp, .wsmainwp {
+.headerwp,
+.wsmainwp {
   max-width: 100% !important;
-
 }

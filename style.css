@@ -319,13 +319,14 @@ a {
   font-family: 'Inter' !important;
 }
 .container {
-  max-width: 1230px;
+
 }
 
 .wrapper {
   margin: 0px auto;
   position: relative;
   display: flex;
+  max-width: 1230px;
 }
 
 .main_content {
@@ -334,12 +335,13 @@ a {
 
 .sidebar_content {
   width: 33.3%;
+  max-width: 380px;
   height: 350px;
-  background: red !important;
-
   z-index: 999;
   background: #fbe5b5;
   border-radius: 35px 0 0 0;
+  position:fixed;
+  right: 20%;
 }
 .sidebar_content .sform_title_div {
   padding: 36px;

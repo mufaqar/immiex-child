@@ -78,6 +78,8 @@ p {
   background: #f9f9f9;
 }
 
+.wsmainfull { max-width: 1330px ; margin: 0px auto;}
+
 /* --- Mobile --- */
 @media only screen and (max-width: 991px) {
   .wsmobileheader .smllogo {
@@ -183,7 +185,7 @@ p {
 }
 @media screen and (min-width: 769px) {
   .wsmenu > .wsmenu-list > li > .wsmegamenu {
-    transform: translate(-50%, 0) !important;
+  
     background-image: linear-gradient(90deg, #fff 0 64%, #fbe5b5 36% 100%);
   }
   .wp-block-column:not(:first-child) {

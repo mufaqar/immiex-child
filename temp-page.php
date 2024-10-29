@@ -3,6 +3,12 @@
 	<main class="wrapper">
 
 		<div class="main_content">	
+
+		<nav class="pb-15 mt-15" aria-label="breadcrumb">
+		  	<ol class="breadcrumb p-0 m-0">
+		    	<?php bcn_display_list(); ?>
+		  	</ol>
+	  	</nav>
 			<?php do_action('immiex_content_before');	?>
 			<?php
 				if ( have_posts() ) :

@@ -13,11 +13,19 @@ if($topbar_display): ?>
 		</div>
 
 			<!-- Contacts -->
-	    <div class="headertopright header-contacts">
-
-		<ul class="top_links"><li><a href="#">Free Calcuator</a></li><li><a href="#">Free Assisment</a></li><li><a href="#" class="talk_lawyer">Talk to a Laywer</a></li></ul>
-	    	
-	  	</div>
+<div class="headertopright header-contacts">
+    <ul class="top_links">
+       <li>
+        <a href="<?php echo home_url('/free-calculator'); ?>">Free Calcuator</a>
+       </li>
+       <li>
+        <a href="<?php echo home_url('/free-assessment'); ?>">Free Assisment</a>
+       </li>
+       <li>
+        <a href="<?php echo home_url('/consultancy'); ?>" class="talk_lawyer">Talk to a Laywer</a>
+       </li>
+     </ul>	
+</div>
 
 	</div>
 </div>

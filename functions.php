@@ -2,8 +2,7 @@
 function immiex_child_enqueue_styles() {
     //wp_dequeue_style( 'immiex-google-fonts' );
     $parent_style = 'immiex-style';
-    $dependency = array('bootstrap', 'immiex-default-style');   
-
+    $dependency = array('bootstrap', 'immiex-default-style');  
     wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css', $dependency );
     wp_enqueue_style( 'immiex-child-style', get_stylesheet_directory_uri() . '/style.css',  array(  )   );   
 	wp_enqueue_style( 'Inter-google-fonts', 'https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap', false );

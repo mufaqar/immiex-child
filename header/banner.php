@@ -18,6 +18,12 @@ $post_id = Immiex::get_id();
 			<h1><?php the_title()?> </h1>
 			<p>Empower your innovation by launching your start-up in Canada. </p>
             <a href="<?php echo home_url('/consultancy'); ?>" class="vc_btn3 vc_btn3-size-lg vc_btn3-shape-rounded talk_lawyer">Talk to a Laywer</a>
+		
+
+			<?php if (is_home()): ?>
+				<a href="<?php echo home_url('/consultancy'); ?>" class="vc_btn3 vc_btn3-size-lg vc_btn3-shape-rounded talk_lawyer">Talk to a Lawyer</a>
+			<?php endif; ?>
+		
 		</div>	
 <div class="banner_right">
     <div class="service_logos">

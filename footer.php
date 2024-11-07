@@ -11,12 +11,12 @@ do_action('immiex/footer/before');
 	<div class="footer_top">
 		<div class="container_row">
 			<div class="footer_right">
-				<h6>
+				<p>
 					Sign Up To Be
-				</h6>
-				<h4>
+				</p>
+				<h6>
 					The First in Canadian Business Immigration News
-				</h4>
+				</h6>
 			</div>
 		</div>
 	</div>

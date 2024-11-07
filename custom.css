@@ -494,6 +494,15 @@ a {
   .home-block {
     margin-left: 20px !important;
   }
+  .footer_top .container_row {
+    flex-direction: column;
+  }
+  .footer_top .container_row .footer_left{
+    width: 100%;
+  }
+  .footer_top .container_row .footer_right{
+    width: 50%;
+  }
 }
 
 #header-2.header {
@@ -831,20 +840,29 @@ a.talk_lawyer:hover {
 .footer_top .container_row {
   max-width: 1140px;
   margin: auto;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
 }
-
-.footer_top .container_row .footer_right p {
+.footer_top .container_row .footer_left{
+  width: 50%;
+}
+.footer_top .container_row .footer_left p {
   font-size: 15px;
   font-weight: 500;
   margin-bottom: 0;
   text-transform: uppercase;
   color: #fff;
 }
-.footer_top .container_row .footer_right h6 {
+.footer_top .container_row .footer_left h6 {
   font-size: 30px;
   color: #fff;
   text-transform: capitalize;
   margin-bottom: 0;
+}
+.footer_top .container_row .footer_right{
+  width: 50%;
 }
 
 @media screen and (max-width: 1600px) {

@@ -844,6 +844,7 @@ a.talk_lawyer:hover {
   display: flex;
   flex-direction: row;
   column-gap: 30px;
+  margin-bottom: 40px;
 }
 .footer_top .container_row .footer_left{
   width: 50%;
@@ -857,7 +858,8 @@ a.talk_lawyer:hover {
 }
 .footer_top .container_row .footer_left h3 {
   font-size: 30px;
-  color: #fff;
+  color: #fff!important;
+  margin-top: 15px;
   text-transform: capitalize;
   margin-bottom: 0;
 }

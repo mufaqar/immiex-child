@@ -824,6 +824,7 @@ a.talk_lawyer:hover {
   padding-bottom: 46px;
   padding-top: 46px;
   position: relative;
+  margin-bottom: 40px;
 }
 
 .footer_top:before {
@@ -844,7 +845,6 @@ a.talk_lawyer:hover {
   display: flex;
   flex-direction: row;
   column-gap: 30px;
-  margin-bottom: 40px;
 }
 .footer_top .container_row .footer_left{
   width: 50%;

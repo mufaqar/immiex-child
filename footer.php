@@ -19,7 +19,7 @@ do_action('immiex/footer/before');
 				</h3>
 			</div>
 			<div class="footer_right">
-			[contact-form-7 id="97d9ace" title="Footer Subscribe"] 
+				[contact-form-7 id="97d9ace" title="Footer Subscribe"]
 			</div>
 		</div>
 	</div>

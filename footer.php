@@ -14,9 +14,9 @@ do_action('immiex/footer/before');
 				<p>
 					Sign Up To Be
 				</p>
-				<h6>
+				<h3>
 					The First in Canadian Business Immigration News
-				</h6>
+				</h3>
 			</div>
 			<div class="footer_right">
 				Form 

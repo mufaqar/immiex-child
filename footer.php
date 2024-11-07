@@ -1,3 +1,5 @@
+		
+		This is my Footer
 		<?php 
 		/**
 		 * Default template location: immiex/footer

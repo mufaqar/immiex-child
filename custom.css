@@ -495,13 +495,13 @@ a {
     margin-left: 20px !important;
   }
   .footer_top .container_row {
-    flex-direction: column;
+    flex-direction: column!important;
   }
   .footer_top .container_row .footer_left{
     width: 100%;
   }
   .footer_top .container_row .footer_right{
-    width: 50%;
+    width: 100%;
   }
 }
 

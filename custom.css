@@ -671,6 +671,22 @@ a {
   #faqs-1 .card-header a:hover{
      color: #ec9500;
   }
+  .footer_top{
+    margin-top: 75px;
+    padding-bottom: 46px;
+    padding-top: 46px;
+    position: relative;
+  }
+  .footer_top:before{
+    top: 0;
+    bottom: 0;
+    content: "";
+    position: absolute;
+    background-color: #0c233f;
+    border-top-left-radius: 70px;
+    left: 4%;
+    right: 0;
+  }
   @media screen and (max-width: 1600px) {
   #page_banner .container_row {
           background-position: 63% bottom!important;

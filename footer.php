@@ -1,3 +1,5 @@
+		
+		Hello
 		<?php 
 		/**
 		 * Default template location: immiex/footer

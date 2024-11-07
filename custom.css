@@ -494,14 +494,26 @@ a {
   .home-block {
     margin-left: 20px !important;
   }
+
   .footer_top .container_row {
-    flex-direction: column!important;
+    flex-direction: column !important;
   }
-  .footer_top .container_row .footer_left{
+
+  .footer_top .container_row .footer_left {
     width: 100% !important;
   }
-  .footer_top .container_row .footer_right{
+
+  .footer_top .container_row .footer_right {
     width: 100% !important;
+  }
+
+  .footer_top .container_row .footer_left p {
+    text-align: center !important;
+  }
+
+  .footer_top .container_row .footer_left h3 {
+    font-size: 26px !important;
+    text-align: center !important;
   }
 }
 
@@ -846,24 +858,30 @@ a.talk_lawyer:hover {
   flex-direction: row;
   column-gap: 30px;
 }
-.footer_top .container_row .footer_left{
+
+.footer_top .container_row .footer_left {
   width: 50%;
 }
+
 .footer_top .container_row .footer_left p {
   font-size: 15px;
   font-weight: 500;
   margin-bottom: 0;
   text-transform: uppercase;
   color: #fff;
+  text-align: left;
 }
+
 .footer_top .container_row .footer_left h3 {
   font-size: 30px;
-  color: #fff!important;
+  color: #fff !important;
   margin-top: 15px;
   text-transform: capitalize;
   margin-bottom: 0;
+  text-align: left;
 }
-.footer_top .container_row .footer_right{
+
+.footer_top .container_row .footer_right {
   width: 50%;
 }
 

@@ -10,14 +10,21 @@ $post_id = Immiex::get_id();
 </style>
 
 		
- <section id="page_banner">
-	<div class="container">	
+ <section id="page_banner" style="
+    background-image: url('https://ace-law.com/dev/wp-content/uploads/2024/10/Staff-Transfers.webp');">
+	<div class="container_row wrapper" style="
+    background-image: url('https://ace-law.com/dev/wp-content/uploads/2024/10/rakhmad.webp');">	
 		<div class="banner_content">
 			<h1><?php the_title()?> </h1>
 			<p>Empower your innovation by launching your start-up in Canada. </p>
+            <a href="<?php echo home_url('/consultancy'); ?>" class="vc_btn3 vc_btn3-size-lg vc_btn3-shape-rounded talk_lawyer">Talk to a Laywer</a>
 		</div>	
-		<div class="banner_right">
-		<picture><source data-srcset="https://sobirovs.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2024/07/rakhmad.png.webp" type="image/webp"><img data-src="https://sobirovs.com/wp-content/uploads/2024/07/rakhmad.png" class="webpexpress-processed lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="--smush-placeholder-width: 356px; --smush-placeholder-aspect-ratio: 356/360;"><noscript><img src="https://sobirovs.com/wp-content/uploads/2024/07/rakhmad.png" class="webpexpress-processed"></noscript></picture>
-		</div>
-</section>	
-
+<div class="banner_right">
+    <div class="service_logos">
+		<img src="https://ace-law.com/dev/wp-content/uploads/2024/10/law-society-of-ontario-2.svg" alt="imgage" />
+        <img src="https://ace-law.com/dev/wp-content/uploads/2024/10/tla-2.svg" alt="imgage" />
+        <img src="https://ace-law.com/dev/wp-content/uploads/2024/10/oba-2.svg" alt="imgage" />
+        <img src="https://ace-law.com/dev/wp-content/uploads/2024/10/cila-1.svg" alt="imgage" />
+    </div>
+</div>
+</section>

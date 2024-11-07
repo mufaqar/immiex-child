@@ -498,10 +498,10 @@ a {
     flex-direction: column!important;
   }
   .footer_top .container_row .footer_left{
-    width: 100%;
+    width: 100% !important;
   }
   .footer_top .container_row .footer_right{
-    width: 100%;
+    width: 100% !important;
   }
 }
 

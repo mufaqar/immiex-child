@@ -687,6 +687,10 @@ a {
     left: 4%;
     right: 0;
   }
+  .container_row{
+    max-width: 1140px;
+    margin: auto;
+  }
   @media screen and (max-width: 1600px) {
   #page_banner .container_row {
           background-position: 63% bottom!important;

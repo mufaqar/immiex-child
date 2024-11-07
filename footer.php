@@ -9,12 +9,16 @@ do_action('immiex/footer/before');
 
 <footer id="<?php immiex_footer_id(); ?>" <?php immiex_footer_class(); ?>>
 	<div class="footer_top">
-		<h6>
-			Sign Up To Be
-		</h6>
-		<h4>
-			The First in Canadian Business Immigration News
-		</h4>
+		<div class="container_row">
+			<div class="footer_right">
+				<h6>
+					Sign Up To Be
+				</h6>
+				<h4>
+					The First in Canadian Business Immigration News
+				</h4>
+			</div>
+		</div>
 	</div>
 	<div class="container">
 		<?php

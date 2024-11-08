@@ -1,5 +1,5 @@
 /* Custom CSS 
-Version:1.0.1
+Version:1.1.1
  */
 
 .headerwp,
@@ -12,101 +12,7 @@ Version:1.0.1
   margin: 0px auto;
 }
 
-/* --- Mobile --- */
-@media only screen and (max-width: 991px) {
-  .wsmobileheader .smllogo {
-    margin-top: 8px;
-  }
 
-  .wsmobileheader .smllogo img {
-    height: 36px;
-  }
-
-  /* Home */
-  #hero-3 {
-    margin-top: 0px;
-    padding-top: 30px;
-  }
-
-  #hero-3 h2 {
-    font-size: 2rem;
-  }
-
-  :root {
-    --header-height-with-topbar: 50px !important;
-  }
-
-  .hero-request-form {
-    padding: 25px 30px 0px;
-    margin: 0 5px 0 5px;
-  }
-
-  .wpb_wrapper h2 {
-    font-size: 33px;
-  }
-
-  h3.h3-lg {
-    font-size: 1.75rem;
-  }
-
-  .home-block {
-    margin: 5px 20px;
-    padding: 20px 0px;
-    border-radius: 5px;
-  }
-
-  #cta-4 {
-    background-attachment: fixed;
-  }
-
-  #cta-4 .cta-txt {
-    padding-left: 0px;
-  }
-
-  #cta-4 .cta-txt h3 {
-    font-size: 2rem;
-  }
-
-  .section-title {
-    padding: 5px !important;
-  }
-
-  /* About */
-  h1 {
-    font-size: 30px !important;
-  }
-
-  h2 {
-    font-size: 28px !important;
-  }
-
-  .about-section {
-    padding-top: 40px !important;
-    padding-bottom: 20px !important;
-  }
-
-  .vc_custom_1707334581110 {
-    margin-bottom: 10px !important;
-  }
-
-  .vc_figure {
-    margin-bottom: 20px !important;
-  }
-
-  .vc_custom_1707331156685 {
-    padding-left: 10px !important;
-  }
-
-  /* Contact Us */
-  h1.about-section {
-    font-size: 30px !important;
-    margin-bottom: 0 !important;
-  }
-
-  .vc_custom_1707392207027 {
-    padding: 0px !important;
-  }
-}
 
 .about-shireen #about-2 .video-square {
   left: 5px;
@@ -846,6 +752,102 @@ p {
 
 .home-block:hover {
   background: #f9f9f9;
+}
+
+/* --- Mobile --- */
+@media only screen and (max-width: 991px) {
+  .wsmobileheader .smllogo {
+    margin-top: 8px;
+  }
+
+  .wsmobileheader .smllogo img {
+    height: 36px;
+  }
+
+  /* Home */
+  #hero-3 {
+    margin-top: 0px;
+    padding-top: 30px;
+  }
+
+  #hero-3 h2 {
+    font-size: 2rem;
+  }
+
+  :root {
+    --header-height-with-topbar: 50px !important;
+  }
+
+  .hero-request-form {
+    padding: 25px 30px 0px;
+    margin: 0 5px 0 5px;
+  }
+
+  .wpb_wrapper h2 {
+    font-size: 33px;
+  }
+
+  h3.h3-lg {
+    font-size: 1.75rem;
+  }
+
+  .home-block {
+    margin: 5px 20px;
+    padding: 20px 0px;
+    border-radius: 5px;
+  }
+
+  #cta-4 {
+    background-attachment: fixed;
+  }
+
+  #cta-4 .cta-txt {
+    padding-left: 0px;
+  }
+
+  #cta-4 .cta-txt h3 {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    padding: 5px !important;
+  }
+
+  /* About */
+  h1 {
+    font-size: 30px !important;
+  }
+
+  h2 {
+    font-size: 28px !important;
+  }
+
+  .about-section {
+    padding-top: 40px !important;
+    padding-bottom: 20px !important;
+  }
+
+  .vc_custom_1707334581110 {
+    margin-bottom: 10px !important;
+  }
+
+  .vc_figure {
+    margin-bottom: 20px !important;
+  }
+
+  .vc_custom_1707331156685 {
+    padding-left: 10px !important;
+  }
+
+  /* Contact Us */
+  h1.about-section {
+    font-size: 30px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .vc_custom_1707392207027 {
+    padding: 0px !important;
+  }
 }
 
 @media only screen and (max-width: 991px) {

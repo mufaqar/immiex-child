@@ -238,6 +238,7 @@ Version:1.1.1
    background-image: url('/dev/wp-content/themes/immiex-child/images/canada.png');
    background-repeat: no-repeat;
    background-position: 90% center !important;
+   background-size: contain;
  }
  
  .sidebar_content .sform_title {

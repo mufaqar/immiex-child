@@ -394,6 +394,8 @@ a {
 
 .wsmenu>.wsmenu-list>li>ul.sub-menu {
   top: 55px;
+  left: auto;
+  right: 0;
 }
 
 .wsmegamenu .desktop_mega {

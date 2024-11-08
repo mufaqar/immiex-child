@@ -215,14 +215,16 @@ Version:1.0.1
   padding: 0 0 0 20px;
   position: relative;
 }
-
+.header-info a{
+  line-height: unset!important;
+}
 .header-info .callusbtn:before {
   background-color: #0c233f;
   bottom: 0;
   content: '';
   left: 0;
   position: absolute;
-  top: 12px;
+  top: 1px;
   width: 1px;
   height: 17px;
 }

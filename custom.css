@@ -168,6 +168,7 @@ Version:1.0.1
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
+  align-items: center;
 }
 
 .header-info span {
@@ -215,7 +216,7 @@ Version:1.0.1
   padding: 0 0 0 20px;
   position: relative;
 }
-.header-info a{
+.header-info a,.header-info span{
   line-height: unset!important;
 }
 .header-info .callusbtn:before {

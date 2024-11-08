@@ -746,6 +746,16 @@ a.talk_lawyer:hover {
   text-align: left;
   font-size: 15px;
 }
+.bottom-footer.pt-50{
+  padding-top: 30px;
+}
+.bottom-footer.pb-50{
+  padding-bottom: 30px;
+}
+.bottom-footer p{
+  line-height: 26px;
+  font-size: 15px;
+}
 
 /*Older Css*/
 .bg_column p a {

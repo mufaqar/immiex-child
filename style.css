@@ -5,7 +5,7 @@ Description:  Immiex child
 Author:       Mufaqar
 Author URI:   http://mufaqar.com
 Template:     immiex
-Version:      2.2.2
+Version:      2.0.1
 License: GNU General Public License version 3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
@@ -235,7 +235,7 @@ Version:1.1.1
  
  .sidebar_content .sform_title_div {
    padding: 36px;
-   background-image: url('/canada.png');
+   background-image: url('/dev/wp-content/themes/immiex-child/images/canada.png');
    background-repeat: no-repeat;
    background-position: 90% center !important;
  }

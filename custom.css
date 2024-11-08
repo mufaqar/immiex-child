@@ -421,6 +421,13 @@ a {
   text-transform: uppercase !important;
   font-family: Inter !important;
 }
+.wsmegamenu .bg_column h4.wp-block-heading{
+	font-family: 'Cantata One', serif !important;
+	font-size: 20px!important;
+	margin-bottom: 25px!important;
+  text-transform: capitalize!important;
+	line-height: 1.4!important;
+}
 
 .wsmegamenu h6 a {
   color: #0c233f;

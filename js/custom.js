@@ -1,25 +1,35 @@
-jQuery(document).ready(function($) {
-    var stickyForm = $('#sticky-form');  // The form we want to make sticky
-    var sidebarForm = $('.sidebar-form'); // The parent container for the form
-    var stickyTop = stickyForm.offset().top; // Get the form's initial top offset
 
-    $(window).scroll(function() {
-        var scrollTop = $(window).scrollTop(); // Get the current scroll position
+function makeDivFixedUntilFooter(className, scrollPosition, footerId) {
+    var elements = document.getElementsByClassName(className);
+    var footer = document.getElementById(footerId);
 
-        // Check if we've scrolled past the sticky form's initial position
-        if (scrollTop >= stickyTop) {
-            stickyForm.addClass('sticky-active').css({
-                'width': sidebarForm.width(), // Maintain width
-            });
+    if (elements.length === 0) {
+      console.warn("No elements found with class '" + className + "'.");
+      return;
+    }
+    
+    if (!footer) {
+      console.warn("Footer with id '" + footerId + "' not found.");
+      return;
+    }
+
+    window.addEventListener("scroll", function() {
+      var footerOffsetTop = footer.offsetTop;
+      
+      for (var i = 0; i < elements.length; i++) {
+        var element = elements[i];
+        var elementHeight = element.offsetHeight;
+
+        if (window.scrollY > scrollPosition && window.scrollY + elementHeight < footerOffsetTop) {
+          element.classList.add("fixed");
         } else {
-            stickyForm.removeClass('sticky-active');
+          element.classList.remove("fixed");
         }
+      }
     });
+  }
 
-    // Adjust the form's width when the window is resized
-    $(window).resize(function() {
-        if (stickyForm.hasClass('sticky-active')) {
-            stickyForm.css('width', sidebarForm.width());
-        }
-    });
-});
+  // Call the function with the desired class, scroll position, and footer ID
+  document.addEventListener("DOMContentLoaded", function() {
+    makeDivFixedUntilFooter("sidebar_content", 500, "footer-1");
+  });

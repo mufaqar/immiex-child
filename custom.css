@@ -216,7 +216,7 @@ Version:1.0.1
   padding: 0 0 0 20px;
   position: relative;
 }
-.header-info a,.header-info span{
+.header-info a, .header-info span, .header-contacts a, .header-contacts span{
   line-height: unset!important;
 }
 .header-info .callusbtn:before {

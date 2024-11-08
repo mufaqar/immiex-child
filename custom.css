@@ -670,7 +670,9 @@ a.talk_lawyer:hover {
 #faqs-1 .card-header a:hover {
   color: #ec9500;
 }
-
+#footer-1.pt-100{
+  padding-top: 0;
+}
 .footer_top {
   padding-bottom: 46px;
   padding-top: 46px;
@@ -743,26 +745,6 @@ a.talk_lawyer:hover {
 .footer_top .container_row .footer_right .footer-form input {
   text-align: left;
   font-size: 15px;
-}
-
-@media screen and (max-width: 1600px) {
-  #page_banner .container_row {
-    background-position: 63% bottom !important;
-  }
-
-  .fixed {
-    left: 66.66% !important;
-  }
-}
-
-@media screen and (max-width: 1850px) {
-  #page_banner .container_row {
-    background-position: 82% bottom;
-  }
-
-  .fixed {
-    left: 63%;
-  }
 }
 
 /*Older Css*/
@@ -1011,5 +993,24 @@ p {
   .footer_top .container_row .footer_right .footer-form .col-lg-6 {
     padding-left: 15px!important;
     padding-right: 15px!important;
+  }
+}
+@media screen and (max-width: 1600px) {
+  #page_banner .container_row {
+    background-position: 63% bottom !important;
+  }
+
+  .fixed {
+    left: 66.66% !important;
+  }
+}
+
+@media screen and (max-width: 1850px) {
+  #page_banner .container_row {
+    background-position: 82% bottom;
+  }
+
+  .fixed {
+    left: 63%;
   }
 }

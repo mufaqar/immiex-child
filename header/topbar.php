@@ -16,10 +16,10 @@ if($topbar_display): ?>
 <div class="headertopright header-contacts">
     <ul class="top_links">
        <li>
-        <a href="<?php echo home_url('/free-calculator'); ?>">Free Calcuator</a>
+        <a href="<?php echo home_url('/fee-calculator'); ?>">Fee Calculator</a>
        </li>
        <li>
-        <a href="<?php echo home_url('/free-assessment'); ?>">Free Assisment</a>
+        <a href="<?php echo home_url('/free-assessment'); ?>">Free Assessment</a>
        </li>
        <li>
         <a href="<?php echo home_url('/consultancy'); ?>" class="talk_lawyer">Talk to a Laywer</a>

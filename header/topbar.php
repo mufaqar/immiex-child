@@ -1,5 +1,5 @@
 <?php
-$topbar_display = immiex_get_option( 'topbar_display', immiex_get_config('topbar_display') );
+$topbar_display = immiex_get_option('topbar_display', immiex_get_config('topbar_display'));
 
 if($topbar_display): ?>
 <div <?php immiex_topbar_class(); ?>>

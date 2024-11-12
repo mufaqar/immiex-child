@@ -12,3 +12,5 @@ function immiex_child_enqueue_styles() {
     
 }
 add_action( 'wp_enqueue_scripts', 'immiex_child_enqueue_styles' );
+
+include_once('inc/extra.php');

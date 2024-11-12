@@ -10,39 +10,39 @@
 		  	</ol>
 	  	</nav>
 			<?php do_action('immiex_content_before');	?>
+
 			<?php
-				if ( have_posts() ) :
+				// Arguments for the custom query
+				$args = array(
+					'post_type' => 'business-listings', // Your custom post type name
+					'posts_per_page' => -1,    // Retrieve all posts
+					'order' => 'ASC',          // Order ascending
+					'orderby' => 'title'       // Order by post title
+				);
 
-					/* Start the Loop */
-					while ( have_posts() ) : the_post();
+				// Custom query
+				$business_query = new WP_Query($args);
 
-						/*
-						* Include the Post-Format-specific template for the content.
-						* If you want to override this in a child theme, then include a file
-						* called content-___.php (where ___ is the Post Format name) and that will be used instead.
-						*/
-						get_template_part( 'template-parts/content', 'page' );
+				// Check if there are posts
+				if ($business_query->have_posts()) :
+					while ($business_query->have_posts()) : $business_query->the_post(); ?>
 
-						wp_link_pages( array(					
-							'nextpagelink'     => esc_attr__( 'Next', 'immiex'),
-							'previouspagelink' => esc_attr__( 'Previous', 'immiex' ),
-							'pagelink'         => '%',
-							'echo'             => 1
-						) );
+						<div class="business-item">
+							<h2><?php the_title(); ?></h2>
+							<p><?php the_excerpt(); ?></p>
+							<a href="<?php the_permalink(); ?>">Read More</a>
+						</div>
 
-					endwhile;
+					<?php endwhile;
+				else : ?>
+					<p>No businesses found.</p>
+				<?php endif; 
 
-					// If comments are open or we have at least one comment, load up the comment template.
-					if ( comments_open() || get_comments_number() ) :
-						comments_template();
-					endif;
-					
-				else :
+				// Reset post data to the main query
+				wp_reset_postdata();
+				?>
 
-					get_template_part( 'template-parts/post/content', 'none' );
-
-				endif;
-			?>
+			
 			<?php do_action('immiex_content_after');	?>
 		</div>
 		<div class="sidebar_content">        

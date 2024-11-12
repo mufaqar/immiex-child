@@ -85,7 +85,7 @@
                 ?>
             </select>
 
-            <button type="submit">Search</button>
+            <button type="submit" class="btn btn-primary">Search</button>
         </form>
     </div>
 

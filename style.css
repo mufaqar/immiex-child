@@ -272,7 +272,11 @@ Version:1.1.1
  .sidebar_content input[type='email'],
  .sidebar_content input[type='tel'],
  .sidebar_content input[type='text'],
- .sidebar_content select {
+ .sidebar_content select,
+ .business_form input[type='email'],
+ .business_form input[type='tel'],
+ .business_form input[type='text'],
+ .business_form select {
    background-color: #f8f8f8 !important;
    color: #0c233f !important;
    border: unset !important;
@@ -771,6 +775,8 @@ Version:1.1.1
  }
  .wrapper.business_Wrapper{
   flex-direction: column;
+  gap: 30px;
+  padding: 60px 15px;
  }
  
  /* --- Mobile --- */

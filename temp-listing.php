@@ -117,5 +117,5 @@ $business_query = new WP_Query($args);
 </div>
 
 <?php wp_reset_postdata(); ?>
-
+	</div>
 <?php get_footer(); ?>

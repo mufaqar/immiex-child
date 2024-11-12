@@ -1,48 +1,4 @@
 <?php
-
-function cptui_register_my_cpts() {
-
-	/**
-	 * Post Type: Business Listings.
-	 */
-
-	$labels = [
-		"name" => esc_html__( "Business Listings", "immiex" ),
-		"singular_name" => esc_html__( "Business Listing", "immiex" ),
-	];
-
-	$args = [
-		"label" => esc_html__( "Business Listings", "immiex" ),
-		"labels" => $labels,
-		"description" => "",
-		"public" => true,
-		"publicly_queryable" => true,
-		"show_ui" => true,
-		"show_in_rest" => true,
-		"rest_base" => "",
-		"rest_controller_class" => "WP_REST_Posts_Controller",
-		"rest_namespace" => "wp/v2",
-		"has_archive" => false,
-		"show_in_menu" => true,
-		"show_in_nav_menus" => true,
-		"delete_with_user" => false,
-		"exclude_from_search" => false,
-		"capability_type" => "post",
-		"map_meta_cap" => true,
-		"hierarchical" => false,
-		"can_export" => false,
-		"rewrite" => [ "slug" => "business-listings", "with_front" => true ],
-		"query_var" => true,
-		"supports" => [ "title", "editor", "thumbnail" ],
-		"show_in_graphql" => false,
-	];
-
-	register_post_type( "business-listings", $args );
-}
-
-add_action( 'init', 'cptui_register_my_cpts' );
-
-
 function cptui_register_my_taxes() {
 
 	/**
@@ -60,7 +16,7 @@ function cptui_register_my_taxes() {
 		"labels" => $labels,
 		"public" => true,
 		"publicly_queryable" => true,
-		"hierarchical" => false,
+		"hierarchical" => true,
 		"show_ui" => true,
 		"show_in_menu" => true,
 		"show_in_nav_menus" => true,
@@ -77,9 +33,74 @@ function cptui_register_my_taxes() {
 		"show_in_graphql" => false,
 	];
 	register_taxonomy( "industries", [ "business-listings" ], $args );
+
+	/**
+	 * Taxonomy: Province.
+	 */
+
+	$labels = [
+		"name" => esc_html__( "Province", "immiex" ),
+		"singular_name" => esc_html__( "Province", "immiex" ),
+	];
+
+	
+	$args = [
+		"label" => esc_html__( "Province", "immiex" ),
+		"labels" => $labels,
+		"public" => true,
+		"publicly_queryable" => true,
+		"hierarchical" => true,
+		"show_ui" => true,
+		"show_in_menu" => true,
+		"show_in_nav_menus" => true,
+		"query_var" => true,
+		"rewrite" => [ 'slug' => 'province', 'with_front' => true, ],
+		"show_admin_column" => false,
+		"show_in_rest" => true,
+		"show_tagcloud" => false,
+		"rest_base" => "province",
+		"rest_controller_class" => "WP_REST_Terms_Controller",
+		"rest_namespace" => "wp/v2",
+		"show_in_quick_edit" => false,
+		"sort" => false,
+		"show_in_graphql" => false,
+	];
+	register_taxonomy( "province", [ "business-listings" ], $args );
+
+	/**
+	 * Taxonomy: Types.
+	 */
+
+	$labels = [
+		"name" => esc_html__( "Types", "immiex" ),
+		"singular_name" => esc_html__( "Type", "immiex" ),
+	];
+
+	
+	$args = [
+		"label" => esc_html__( "Types", "immiex" ),
+		"labels" => $labels,
+		"public" => true,
+		"publicly_queryable" => true,
+		"hierarchical" => true,
+		"show_ui" => true,
+		"show_in_menu" => true,
+		"show_in_nav_menus" => true,
+		"query_var" => true,
+		"rewrite" => [ 'slug' => 'business_type', 'with_front' => true, ],
+		"show_admin_column" => false,
+		"show_in_rest" => true,
+		"show_tagcloud" => false,
+		"rest_base" => "business_type",
+		"rest_controller_class" => "WP_REST_Terms_Controller",
+		"rest_namespace" => "wp/v2",
+		"show_in_quick_edit" => false,
+		"sort" => false,
+		"show_in_graphql" => false,
+	];
+	register_taxonomy( "business_type", [ "business-listings" ], $args );
 }
 add_action( 'init', 'cptui_register_my_taxes' );
-
 
 if( function_exists('acf_add_local_field_group') ):
 
@@ -94,6 +115,7 @@ if( function_exists('acf_add_local_field_group') ):
                 'type' => 'text',
                 'instructions' => 'Enter the unique listing ID.',
                 'required' => 1,
+                'default_value' => 'LST-0001', // Default value for Listing ID
             ),
             array(
                 'key' => 'field_contact_phone',
@@ -102,6 +124,7 @@ if( function_exists('acf_add_local_field_group') ):
                 'type' => 'text',
                 'instructions' => 'Enter the contact phone number.',
                 'required' => 1,
+                'default_value' => '123-456-7890', // Default value for Contact Phone
             ),
             array(
                 'key' => 'field_for_sale_by',
@@ -109,6 +132,7 @@ if( function_exists('acf_add_local_field_group') ):
                 'name' => 'for_sale_by',
                 'type' => 'text',
                 'instructions' => 'Specify who is selling the listing.',
+                'default_value' => 'Owner', // Default value for For Sale By
             ),
             array(
                 'key' => 'field_hours_of_operation',
@@ -116,6 +140,7 @@ if( function_exists('acf_add_local_field_group') ):
                 'name' => 'hours_of_operation',
                 'type' => 'text',
                 'instructions' => 'Enter the hours of operation.',
+                'default_value' => 'Mon-Fri: 9 AM - 5 PM', // Default value for Hours of Operation
             ),
             array(
                 'key' => 'field_contact_name',
@@ -124,6 +149,7 @@ if( function_exists('acf_add_local_field_group') ):
                 'type' => 'text',
                 'instructions' => 'Enter the name of the contact person.',
                 'required' => 1,
+                'default_value' => 'John Doe', // Default value for Contact Name
             ),
             array(
                 'key' => 'field_contact_email',
@@ -132,6 +158,7 @@ if( function_exists('acf_add_local_field_group') ):
                 'type' => 'email',
                 'instructions' => 'Enter the contact email address.',
                 'required' => 1,
+                'default_value' => 'contact@example.com', // Default value for Contact Email
             ),
         ),
         'location' => array(
@@ -139,7 +166,7 @@ if( function_exists('acf_add_local_field_group') ):
                 array(
                     'param' => 'post_type',
                     'operator' => '==',
-                    'value' => 'business-listings', // Change this to your target post type
+                    'value' => 'your_custom_post_type', // Change this to your target post type
                 ),
             ),
         ),

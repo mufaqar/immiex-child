@@ -28,23 +28,22 @@
 					while ($business_query->have_posts()) : $business_query->the_post(); ?>
 
 						<div class="business-item">
-						<?php if (has_post_thumbnail()) : ?>
-                    <div class="business-thumbnail" style="margin-bottom: 10px;">
-                        <a href="<?php the_permalink(); ?>">
-                            <?php the_post_thumbnail('medium', array('style' => 'width: 100%; height: auto;')); ?>
-                        </a>
-                    </div>
-                <?php endif; ?>
-				<h2 class="business-title" style="font-size: 1.25em; margin-top: 0;">
-                    <a href="<?php the_permalink(); ?>" style="text-decoration: none; color: #333;">
-                        <?php the_title(); ?>
-                    </a>
-                </h2>
-							<a href="<?php the_permalink(); ?>">Read More</a>
+							<?php if (has_post_thumbnail()) : ?>
+								<div class="business-thumbnail" style="margin-bottom: 10px;">
+									<a href="<?php the_permalink(); ?>">
+										<?php the_post_thumbnail('medium', array('style' => 'width: 100%; height: auto;')); ?>
+									</a>
+								</div>
+							<?php endif; ?>
+							<h2 class="business-title" style="font-size: 1.25em; margin-top: 0;">
+								<a href="<?php the_permalink(); ?>" style="text-decoration: none; color: #333;">
+									<?php the_title(); ?>
+								</a>
+							</h2>
+							<a href="<?php the_permalink(); ?>" class="readmore">Read More</a>
 						</div>
 
-					<?php endwhile;
-				else : ?>
+					<?php endwhile;		else : ?>
 					<p>No businesses found.</p>
 				<?php endif; 
 
@@ -55,9 +54,7 @@
 			
 			<?php do_action('immiex_content_after');	?>
 		</div>
-		<div class="sidebar_content">        
-			<?php get_template_part( 'template-parts/custom', 'sidebar' ); ?> 
-		</div>	 			
+		 			
 	</main>
 <?php get_footer(); ?>
 

@@ -11,7 +11,6 @@ if (!is_page_template('temp-listing.php') && !is_singular('business-listings')) 
 
 </style>
 
-is_page_template
 		
  <section id="page_banner" style="
     background-image: url('https://ace-law.com/dev/wp-content/uploads/2024/10/Staff-Transfers.webp');">

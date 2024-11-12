@@ -4,11 +4,90 @@
 
 		<div class="main_content">	
 
-		<nav class="pb-15 mt-15" aria-label="breadcrumb">
-		  	<ol class="breadcrumb p-0 m-0">
-		    	<?php bcn_display_list(); ?>
-		  	</ol>
-	  	</nav>
+<?php
+		// Handle form submission and filter query
+$province = isset($_GET['province']) ? sanitize_text_field($_GET['province']) : '';
+$business_type = isset($_GET['business_type']) ? sanitize_text_field($_GET['business_type']) : '';
+$industries = isset($_GET['industries']) ? sanitize_text_field($_GET['industries']) : '';
+
+// Query arguments
+$args = array(
+    'post_type' => 'business-listings',
+    'posts_per_page' => -1,
+    'tax_query' => array(
+        'relation' => 'AND',
+    ),
+);
+
+if ($province) {
+    $args['tax_query'][] = array(
+        'taxonomy' => 'province',
+        'field' => 'slug',
+        'terms' => $province,
+    );
+}
+
+if ($business_type) {
+    $args['tax_query'][] = array(
+        'taxonomy' => 'business_type',
+        'field' => 'slug',
+        'terms' => $business_type,
+    );
+}
+
+if ($industries) {
+    $args['tax_query'][] = array(
+        'taxonomy' => 'industries',
+        'field' => 'slug',
+        'terms' => $industries,
+    );
+}
+
+$business_query = new WP_Query($args);
+?>
+
+<!-- Filter Form -->
+<form method="GET" action="">
+    <label for="province">Province:</label>
+    <select name="province" id="province">
+        <option value="">Select Province</option>
+        <?php
+        $provinces = get_terms(array('taxonomy' => 'province', 'hide_empty' => false));
+        foreach ($provinces as $province_term) {
+            echo '<option value="' . esc_attr($province_term->slug) . '"' . selected($province, $province_term->slug, false) . '>' . esc_html($province_term->name) . '</option>';
+        }
+        ?>
+    </select>
+
+    <label for="business_type">Business Type:</label>
+    <select name="business_type" id="business_type">
+        <option value="">Select Business Type</option>
+        <?php
+        $business_types = get_terms(array('taxonomy' => 'business_type', 'hide_empty' => false));
+        foreach ($business_types as $type_term) {
+            echo '<option value="' . esc_attr($type_term->slug) . '"' . selected($business_type, $type_term->slug, false) . '>' . esc_html($type_term->name) . '</option>';
+        }
+        ?>
+    </select>
+
+    <label for="industries">Industries:</label>
+    <select name="industries" id="industries">
+        <option value="">Select Industry</option>
+        <?php
+        $industries_terms = get_terms(array('taxonomy' => 'industries', 'hide_empty' => false));
+        foreach ($industries_terms as $industry_term) {
+            echo '<option value="' . esc_attr($industry_term->slug) . '"' . selected($industries, $industry_term->slug, false) . '>' . esc_html($industry_term->name) . '</option>';
+        }
+        ?>
+    </select>
+
+    <button type="submit">Search</button>
+</form>
+
+
+
+
+		
 			<?php do_action('immiex_content_before');	?>
 
 			<?php

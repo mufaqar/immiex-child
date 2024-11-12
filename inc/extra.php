@@ -212,7 +212,7 @@ if( function_exists('acf_add_local_field_group') ):
                 array(
                     'param' => 'post_type',
                     'operator' => '==',
-                    'value' => 'your_custom_post_type', // Change this to your target post type
+                    'value' => 'business-listings', // Change this to your target post type
                 ),
             ),
         ),

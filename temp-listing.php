@@ -1,46 +1,49 @@
-<?php get_header(); /* Template Name: Business Listing  */ ?>
+<?php get_header(); /* Template Name: Business Listing */ ?>
 
-	<main class="wrapper">
-
-		<div class="main_content">	
+<main class="wrapper">
 
 <?php
-		// Handle form submission and filter query
+// Handle form submission and filter query
 $province = isset($_GET['province']) ? sanitize_text_field($_GET['province']) : '';
 $business_type = isset($_GET['business_type']) ? sanitize_text_field($_GET['business_type']) : '';
 $industries = isset($_GET['industries']) ? sanitize_text_field($_GET['industries']) : '';
 
-// Query arguments
+// Determine if any filters are active
+$is_filtered = $province || $business_type || $industries;
+
+// Base Query Arguments
 $args = array(
     'post_type' => 'business-listings',
     'posts_per_page' => -1,
-    'tax_query' => array(
-        'relation' => 'AND',
-    ),
 );
 
-if ($province) {
-    $args['tax_query'][] = array(
-        'taxonomy' => 'province',
-        'field' => 'slug',
-        'terms' => $province,
-    );
-}
+// Add tax_query only if filters are set
+if ($is_filtered) {
+    $args['tax_query'] = array('relation' => 'AND');
+    
+    if ($province) {
+        $args['tax_query'][] = array(
+            'taxonomy' => 'province',
+            'field' => 'slug',
+            'terms' => $province,
+        );
+    }
 
-if ($business_type) {
-    $args['tax_query'][] = array(
-        'taxonomy' => 'business_type',
-        'field' => 'slug',
-        'terms' => $business_type,
-    );
-}
+    if ($business_type) {
+        $args['tax_query'][] = array(
+            'taxonomy' => 'business_type',
+            'field' => 'slug',
+            'terms' => $business_type,
+        );
+    }
 
-if ($industries) {
-    $args['tax_query'][] = array(
-        'taxonomy' => 'industries',
-        'field' => 'slug',
-        'terms' => $industries,
-    );
+    if ($industries) {
+        $args['tax_query'][] = array(
+            'taxonomy' => 'industries',
+            'field' => 'slug',
+            'terms' => $industries,
+        );
+    }
 }
 
 $business_query = new WP_Query($args);
@@ -84,60 +87,35 @@ $business_query = new WP_Query($args);
     <button type="submit">Search</button>
 </form>
 
+<!-- Display Results -->
+<div class="business-listing-grid" style="display: flex; flex-wrap: wrap; gap: 20px;">
+    <?php
+    // Check if there are posts
+    if ($business_query->have_posts()) :
+        while ($business_query->have_posts()) : $business_query->the_post(); ?>
+            <div class="business-item" style="flex: 1 1 calc(33.333% - 20px); box-sizing: border-box; border: 1px solid #ddd; padding: 15px; text-align: center;">
+                
+                <?php if (has_post_thumbnail()) : ?>
+                    <div class="business-thumbnail" style="margin-bottom: 10px;">
+                        <a href="<?php the_permalink(); ?>">
+                            <?php the_post_thumbnail('medium', array('style' => 'width: 100%; height: auto;')); ?>
+                        </a>
+                    </div>
+                <?php endif; ?>
 
+                <h2 class="business-title" style="font-size: 1.25em; margin-top: 0;">
+                    <a href="<?php the_permalink(); ?>" style="text-decoration: none; color: #333;">
+                        <?php the_title(); ?>
+                    </a>
+                </h2>
+                <a href="<?php the_permalink(); ?>" class="readmore">Read More</a>
+            </div>
+        <?php endwhile;
+    else : ?>
+        <p>No businesses found for the selected criteria.</p>
+    <?php endif; ?>
+</div>
 
+<?php wp_reset_postdata(); ?>
 
-		
-			<?php do_action('immiex_content_before');	?>
-
-			<?php
-				// Arguments for the custom query
-				$args = array(
-					'post_type' => 'business-listings', // Your custom post type name
-					'posts_per_page' => -1,    // Retrieve all posts
-					'order' => 'ASC',          // Order ascending
-					'orderby' => 'title'       // Order by post title
-				);
-
-				// Custom query
-				$business_query = new WP_Query($args);
-
-				// Check if there are posts
-				if ($business_query->have_posts()) :
-					while ($business_query->have_posts()) : $business_query->the_post(); ?>
-
-						<div class="business-item">
-							<?php if (has_post_thumbnail()) : ?>
-								<div class="business-thumbnail" style="margin-bottom: 10px;">
-									<a href="<?php the_permalink(); ?>">
-										<?php the_post_thumbnail('medium', array('style' => 'width: 100%; height: auto;')); ?>
-									</a>
-								</div>
-							<?php endif; ?>
-							<h2 class="business-title" style="font-size: 1.25em; margin-top: 0;">
-								<a href="<?php the_permalink(); ?>" style="text-decoration: none; color: #333;">
-									<?php the_title(); ?>
-								</a>
-							</h2>
-							<a href="<?php the_permalink(); ?>" class="readmore">Read More</a>
-						</div>
-
-					<?php endwhile;		else : ?>
-					<p>No businesses found.</p>
-				<?php endif; 
-
-				// Reset post data to the main query
-				wp_reset_postdata();
-				?>
-
-			
-			<?php do_action('immiex_content_after');	?>
-		</div>
-		 			
-	</main>
 <?php get_footer(); ?>
-
-<style>
-
-
-	</style>

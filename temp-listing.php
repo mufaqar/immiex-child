@@ -28,8 +28,18 @@
 					while ($business_query->have_posts()) : $business_query->the_post(); ?>
 
 						<div class="business-item">
-							<h2><?php the_title(); ?></h2>
-							<p><?php the_excerpt(); ?></p>
+						<?php if (has_post_thumbnail()) : ?>
+                    <div class="business-thumbnail" style="margin-bottom: 10px;">
+                        <a href="<?php the_permalink(); ?>">
+                            <?php the_post_thumbnail('medium', array('style' => 'width: 100%; height: auto;')); ?>
+                        </a>
+                    </div>
+                <?php endif; ?>
+				<h2 class="business-title" style="font-size: 1.25em; margin-top: 0;">
+                    <a href="<?php the_permalink(); ?>" style="text-decoration: none; color: #333;">
+                        <?php the_title(); ?>
+                    </a>
+                </h2>
 							<a href="<?php the_permalink(); ?>">Read More</a>
 						</div>
 

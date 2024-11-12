@@ -51,7 +51,7 @@
 
     <!-- Filter Form -->
     <div class="business_form">
-        <form method="GET" action="">
+        <form method="GET" action="" class="row ">
             <div class="col-lg-3">
             <label for="province">Province:</label>
             <select name="province" id="province">

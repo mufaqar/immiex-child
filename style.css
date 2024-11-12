@@ -286,6 +286,10 @@ Version:1.1.1
    box-shadow: unset !important;
    height: 2.625rem !important;
  }
+.business_form label{
+  display: block;
+  width: 100%;
+} 
  
  #header-2.header {
    height: 110px;

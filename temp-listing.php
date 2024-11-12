@@ -52,6 +52,7 @@
     <!-- Filter Form -->
     <div class="business_form">
         <form method="GET" action="">
+            <div class="col-lg-3">
             <label for="province">Province:</label>
             <select name="province" id="province">
                 <option value="">Select Province</option>
@@ -62,7 +63,8 @@
                 }
                 ?>
             </select>
-
+            </div>
+            <div class="col-lg-3">
             <label for="business_type">Business Type:</label>
             <select name="business_type" id="business_type">
                 <option value="">Select Business Type</option>
@@ -73,7 +75,8 @@
                 }
                 ?>
             </select>
-
+            </div>
+            <div class="col-lg-3">
             <label for="industries">Industries:</label>
             <select name="industries" id="industries">
                 <option value="">Select Industry</option>
@@ -84,8 +87,10 @@
                 }
                 ?>
             </select>
-
+            </div>
+            <div class="col-lg-3">
             <button type="submit" class="btn btn-primary">Search</button>
+            </div>
         </form>
     </div>
 

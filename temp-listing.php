@@ -1,6 +1,6 @@
 <?php get_header(); /* Template Name: Business Listing */ ?>
 
-<main class="">
+<main class="wrapper business_Wrapper">
 
     <?php
     // Handle form submission and filter query

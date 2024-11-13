@@ -687,7 +687,7 @@ Version:1.1.1
  
  .footer_top .container_row .footer_right .footer-form .btn,
  .footer_top .container_row .footer_right .footer-form input {
-   border-radius: 0;
+   border-radius: 0!important;
  }
  
  .footer_top .container_row .footer_right .footer-form input {

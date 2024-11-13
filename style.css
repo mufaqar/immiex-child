@@ -517,7 +517,7 @@ a.talk_lawyer:hover {
 #page_banner {
   background-position: right;
   background-repeat: no-repeat;
-  background-size: contain!important;
+  background-size: contain;
   position: relative;
 }
 
@@ -527,6 +527,7 @@ a.talk_lawyer:hover {
   background-position: 84% bottom;
   position: unset;
   border-bottom: 1px solid #dadada;
+  background-size: contain!important;
 }
 
 #page_banner .container_row .banner_content,

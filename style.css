@@ -527,7 +527,7 @@ a.talk_lawyer:hover {
   background-position: 84% bottom;
   position: unset;
   border-bottom: 1px solid #dadada;
-  background-size: contain;
+  background-size: contain!important;
 }
 
 #page_banner .container_row .banner_content,
@@ -999,7 +999,7 @@ p {
   #page_banner .container_row {
     background-image: url('https://ace-law.com/dev/wp-content/uploads/2024/10/Come-To-Canada-As-A-Self-Employed-Professional.png') !important;
     background-size: 100% 55% !important;
-    background-position: 40%;
+    background-position: 40% !important;
     gap: 30px;
     padding: 0 15px;
   }
@@ -1080,7 +1080,7 @@ p {
 
 @media screen and (max-width: 1600px) {
   #page_banner .container_row {
-    background-position: 63% bottom;
+    background-position: 63% bottom !important;
   }
 
   .fixed {
@@ -1090,7 +1090,7 @@ p {
 
 @media screen and (max-width: 1850px) {
   #page_banner .container_row {
-    background-position: 82% bottom;
+    background-position: 82% bottom!important;
   }
 
   .fixed {

@@ -4,16 +4,9 @@ $post_id = Immiex::get_id();
 
 if (!is_page_template('temp-listing.php') && !is_singular('business-listings')) {
 ?>
-
-<style>
-
-/* .page_banner { background-image:url('https://sobirovs.com/wp-content/uploads/2024/07/Staff-Transfers.png');} */
-
-</style>
-
-		
+	
  <section id="page_banner" style="
-    background-image: url('https://ace-law.com/dev/wp-content/uploads/2024/10/Staff-Transfers.webp');">
+    background-image: url('https://ace-law.com/dev/wp-content/uploads/2024/10/Come-To-Canada-As-A-Self-Employed-Professional.png');">
 	<div class="container_row wrapper" style="
     background-image: url('https://ace-law.com/wp-content/uploads/2024/02/Shireen.png');">	
 		<div class="banner_content">

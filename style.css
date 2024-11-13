@@ -285,10 +285,16 @@ Version:1.1.1
    font-size: 14px !important;
    box-shadow: unset !important;
    height: 2.625rem !important;
+   width: 100%;
  }
 .business_form label{
   display: block;
   width: 100%;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #0c233f;
+  text-align: left;
 } 
  
  #header-2.header {
@@ -781,6 +787,9 @@ Version:1.1.1
   flex-direction: column;
   gap: 30px;
   padding: 60px 15px;
+ }
+ .business_form .row{
+  align-items: end;
  }
  
  /* --- Mobile --- */

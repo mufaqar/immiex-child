@@ -53,43 +53,43 @@
     <div class="business_form">
         <form method="GET" action="" class="row ">
             <div class="col-lg-3">
-            <label for="province">Province:</label>
-            <select name="province" id="province">
-                <option value="">Select Province</option>
-                <?php
-                $provinces = get_terms(array('taxonomy' => 'province', 'hide_empty' => false));
-                foreach ($provinces as $province_term) {
-                    echo '<option value="' . esc_attr($province_term->slug) . '"' . selected($province, $province_term->slug, false) . '>' . esc_html($province_term->name) . '</option>';
-                }
-                ?>
-            </select>
+                <label for="province">Province:</label>
+                <select name="province" id="province">
+                    <option value="">Select Province</option>
+                    <?php
+                    $provinces = get_terms(array('taxonomy' => 'province', 'hide_empty' => false));
+                    foreach ($provinces as $province_term) {
+                        echo '<option value="' . esc_attr($province_term->slug) . '"' . selected($province, $province_term->slug, false) . '>' . esc_html($province_term->name) . '</option>';
+                    }
+                    ?>
+                </select>
             </div>
             <div class="col-lg-3">
-            <label for="business_type">Business Type:</label>
-            <select name="business_type" id="business_type">
-                <option value="">Select Business Type</option>
-                <?php
-                $business_types = get_terms(array('taxonomy' => 'business_type', 'hide_empty' => false));
-                foreach ($business_types as $type_term) {
-                    echo '<option value="' . esc_attr($type_term->slug) . '"' . selected($business_type, $type_term->slug, false) . '>' . esc_html($type_term->name) . '</option>';
-                }
-                ?>
-            </select>
+                <label for="business_type">Business Type:</label>
+                <select name="business_type" id="business_type">
+                    <option value="">Select Business Type</option>
+                    <?php
+                    $business_types = get_terms(array('taxonomy' => 'business_type', 'hide_empty' => false));
+                    foreach ($business_types as $type_term) {
+                        echo '<option value="' . esc_attr($type_term->slug) . '"' . selected($business_type, $type_term->slug, false) . '>' . esc_html($type_term->name) . '</option>';
+                    }
+                    ?>
+                </select>
             </div>
             <div class="col-lg-3">
-            <label for="industries">Industries:</label>
-            <select name="industries" id="industries">
-                <option value="">Select Industry</option>
-                <?php
-                $industries_terms = get_terms(array('taxonomy' => 'industries', 'hide_empty' => false));
-                foreach ($industries_terms as $industry_term) {
-                    echo '<option value="' . esc_attr($industry_term->slug) . '"' . selected($industries, $industry_term->slug, false) . '>' . esc_html($industry_term->name) . '</option>';
-                }
-                ?>
-            </select>
+                <label for="industries">Industries:</label>
+                <select name="industries" id="industries">
+                    <option value="">Select Industry</option>
+                    <?php
+                    $industries_terms = get_terms(array('taxonomy' => 'industries', 'hide_empty' => false));
+                    foreach ($industries_terms as $industry_term) {
+                        echo '<option value="' . esc_attr($industry_term->slug) . '"' . selected($industries, $industry_term->slug, false) . '>' . esc_html($industry_term->name) . '</option>';
+                    }
+                    ?>
+                </select>
             </div>
             <div class="col-lg-3">
-            <button type="submit" class="btn btn-primary">Search</button>
+                <button type="submit" class="btn btn-primary w-100">Search</button>
             </div>
         </form>
     </div>

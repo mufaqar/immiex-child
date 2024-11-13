@@ -484,7 +484,8 @@ Version:1.1.1
    padding: 20px 20px 20px 30px;
  }
  
- .calculator-form .result input {
+ .calculator-form .result input,
+ .calculator-form input {
    font-size: 15px !important;
    padding: 8px;
    display: block;

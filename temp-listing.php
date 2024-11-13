@@ -89,7 +89,7 @@
                 </select>
             </div>
             <div class="col-lg-3">
-                <button type="submit" class="btn btn-primary w-100">Search</button>
+                <button type="submit" class="btn btn-primary vc_btn3 w-100">Search</button>
             </div>
         </form>
     </div>

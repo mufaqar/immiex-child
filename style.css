@@ -999,7 +999,7 @@ p {
   #page_banner .container_row {
     background-image: url('https://ace-law.com/dev/wp-content/uploads/2024/10/Come-To-Canada-As-A-Self-Employed-Professional.png') !important;
     background-size: 100% 55% !important;
-    background-position: 40% !important;
+    background-position: 40%;
     gap: 30px;
     padding: 0 15px;
   }
@@ -1080,7 +1080,7 @@ p {
 
 @media screen and (max-width: 1600px) {
   #page_banner .container_row {
-    background-position: 63% bottom !important;
+    background-position: 63% bottom;
   }
 
   .fixed {
@@ -1090,7 +1090,7 @@ p {
 
 @media screen and (max-width: 1850px) {
   #page_banner .container_row {
-    background-position: 82% bottom!important;
+    background-position: 82% bottom;
   }
 
   .fixed {

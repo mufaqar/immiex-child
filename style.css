@@ -484,15 +484,13 @@ Version:1.1.1
    padding: 20px 20px 20px 30px;
  }
  
- .calculator-form .result input,
- .calculator-form input {
+ .calculator-form .result input {
    font-size: 15px !important;
    padding: 8px;
    display: block;
    width: 100%;
    min-height: 30px;
    border: 1px solid #767676;
-   border-radius: 0!important;
  }
  
  .calculator-form .result span.info {

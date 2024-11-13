@@ -1090,7 +1090,7 @@ p {
 
 @media screen and (max-width: 1850px) {
   #page_banner .container_row {
-    background-position: 82% bottom!important;
+    background-position: 82% bottom;
   }
 
   .fixed {

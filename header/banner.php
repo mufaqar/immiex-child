@@ -7,7 +7,7 @@ if (!is_page_template('temp-listing.php') && !is_singular('business-listings')) 
 
 <style>
 
-.page_banner { background-image:url('https://sobirovs.com/wp-content/uploads/2024/07/Staff-Transfers.png');}
+/* .page_banner { background-image:url('https://sobirovs.com/wp-content/uploads/2024/07/Staff-Transfers.png');} */
 
 </style>
 
@@ -15,7 +15,7 @@ if (!is_page_template('temp-listing.php') && !is_singular('business-listings')) 
  <section id="page_banner" style="
     background-image: url('https://ace-law.com/dev/wp-content/uploads/2024/10/Staff-Transfers.webp');">
 	<div class="container_row wrapper" style="
-    background-image: url('https://ace-law.com/dev/wp-content/uploads/2024/10/rakhmad.webp');">	
+    background-image: url('https://ace-law.com/wp-content/uploads/2024/02/Shireen.png');">	
 		<div class="banner_content">
 			<h1><?php the_title()?> </h1>
 			<p>Empower your innovation by launching your start-up in Canada. </p>

@@ -529,7 +529,24 @@ a {
   border-bottom: 1px solid #dadada;
   background-size: contain !important;
 }
-
+#page_banner .container_row .banner_content a.talk_lawyer{
+  font-size: 16px;
+  font-weight: 700 !important;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: #ec9500;
+  line-height: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: 2px solid #ec9500 !important;
+  border-radius: 4px !important;
+}
+#page_banner .container_row .banner_content a.talk_lawyer:hover {
+  background-color: #4868cf !important;
+  border: 2px solid #4868cf !important;
+}
 #page_banner .container_row .banner_content,
 #page_banner .container_row .banner_right {
   width: 50%;
@@ -1060,24 +1077,7 @@ p {
     gap: 30px;
     padding: 0 15px; 
   }
-  #page_banner .container_row .banner_content a.talk_lawyer{
-    font-size: 16px;
-    font-weight: 700 !important;
-    padding-top: 18px;
-    padding-bottom: 18px;
-    padding-left: 25px;
-    padding-right: 25px;
-    background-color: #ec9500;
-    line-height: 30px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    border: 2px solid #ec9500 !important;
-    border-radius: 4px !important;
-  }
-  #page_banner .container_row .banner_content a.talk_lawyer:hover {
-    background-color: #4868cf !important;
-    border: 2px solid #4868cf !important;
-}
+ 
   #page_banner .container_row .banner_content,
   #page_banner .container_row .banner_right {
     width: 100% !important;

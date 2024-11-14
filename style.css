@@ -807,7 +807,7 @@ p {
 
 .business_form .row {
   align-items: end;
-  gap: 20px;
+  gap: 0;
 }
 
 .business-listing-grid {
@@ -1110,7 +1110,9 @@ p {
     padding-left: 15px !important;
     padding-right: 15px !important;
   }
-
+  .business_form .row {
+    gap: 20px;
+  }
   .business-listing-grid {
     display: grid;
     grid-template-columns: auto;

@@ -527,7 +527,7 @@ a.talk_lawyer:hover {
   background-position: 84% bottom;
   position: unset;
   border-bottom: 1px solid #dadada;
-  background-size: contain!important;
+  background-size: contain !important;
 }
 
 #page_banner .container_row .banner_content,
@@ -805,13 +805,47 @@ p {
   padding: 60px 15px;
 }
 
+.business_form .row .col-lg-3 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .business_form .row {
   align-items: end;
+  gap: 20px;
 }
+
 .business-listing-grid {
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 20px;
+}
+
+.business-listing-grid .business-item {
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+}
+
+.business-listing-grid .business-item .business-thumbnail {
+  margin-bottom: 10px;
+}
+
+.business-listing-grid .business-item .business-thumbnail img {
+  width: 100%;
+  height: auto;
+}
+
+.business-listing-grid .business-item .business-title {
+  font-size: 1.25em;
+  margin-top: 0;
+  font-family: 'Cantata One', serif !important;
+}
+
+.business-listing-grid .business-item .business-title a{
+  text-decoration: none;
+  color: #333;
 }
 
 /* --- Mobile --- */
@@ -1081,10 +1115,14 @@ p {
     padding-left: 15px !important;
     padding-right: 15px !important;
   }
+
   .business-listing-grid {
     display: grid;
     grid-template-columns: auto;
     gap: 20px;
+  }
+  .business-listing-grid .business-item .business-title {
+    font-size: 1em;
   }
 }
 

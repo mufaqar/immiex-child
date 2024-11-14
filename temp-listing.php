@@ -101,11 +101,9 @@
         if ($business_query->have_posts()):
             while ($business_query->have_posts()):
                 $business_query->the_post(); ?>
-                <div class="business-item"
-                    style="flex: 1 1 calc(33.333% - 20px); box-sizing: border-box; border: 1px solid #ddd; padding: 15px; text-align: center;">
-
+                <div class="business-item">
                     <?php if (has_post_thumbnail()): ?>
-                        <div class="business-thumbnail" style="margin-bottom: 10px;">
+                        <div class="business-thumbnail">
                             <a href="<?php the_permalink(); ?>">
                                 <?php the_post_thumbnail('medium', array('style' => 'width: 100%; height: auto;')); ?>
                             </a>

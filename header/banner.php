@@ -15,12 +15,12 @@ if (!is_page_template('temp-listing.php') && !is_singular('business-listings')) 
 				$value = get_field('excerpt');
 				if( $value ) {echo $value;}?></p>
 				<a href="<?php echo home_url('/consultancy'); ?>"
-					class="vc_btn3 vc_btn3-size-lg vc_btn3-shape-rounded talk_lawyer">Talk to a Laywer</a>
+					class="talk_lawyer">Talk to a Laywer</a>
 
 
 				<?php if (is_home()): ?>
 					<a href="<?php echo home_url('/consultancy'); ?>"
-						class="vc_btn3 vc_btn3-size-lg vc_btn3-shape-rounded talk_lawyer">Talk to a Lawyer</a>
+						class="talk_lawyer">Talk to a Lawyer</a>
 				<?php endif; ?>
 
 			</div>

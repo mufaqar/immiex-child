@@ -10,12 +10,12 @@
                 <div class="row">
                     <!-- Post Thumbnail -->
                     <?php if (has_post_thumbnail()): ?>
-                        <div class="business-thumbnail col-lg-9">
+                        <div class="business-thumbnail col-md-8">
                             <?php the_post_thumbnail('large', array('style' => 'width: 100%; height: auto;')); ?>
                         </div>
                     <?php endif; ?>
                     <!-- Taxonomy Terms -->
-                    <div class="business-taxonomies col-lg-3">
+                    <div class="business-taxonomies col-md-4">
                         <!-- Province -->
                         <?php
                         $provinces = get_the_terms(get_the_ID(), 'province');

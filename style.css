@@ -799,7 +799,7 @@ p {
   background: #f9f9f9;
 }
 
-.wrapper.business_Wrapper {
+.wrapper.business_Wrapper,.wrapper.single-business-listing {
   flex-direction: column;
   gap: 30px;
   padding: 60px 15px;

@@ -110,8 +110,8 @@
                         </div>
                     <?php endif; ?>
 
-                    <h2 class="business-title" style="font-size: 1.25em; margin-top: 0;">
-                        <a href="<?php the_permalink(); ?>" style="text-decoration: none; color: #333;">
+                    <h2 class="business-title">
+                        <a href="<?php the_permalink(); ?>">
                             <?php the_title(); ?>
                         </a>
                     </h2>

@@ -854,6 +854,10 @@ p {
   letter-spacing: -.5px;
   padding-top: 15px;
 }
+.single-business-listing .business-taxonomies ul li{
+font-size: 1.05rem;
+font-weight: 400;
+}
 
 /* --- Mobile --- */
 @media only screen and (max-width: 991px) {

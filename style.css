@@ -856,6 +856,10 @@ p {
   padding-top: 15px;
 }
 
+.single-business-listing .bg_pink {
+  background: #fffbf2 !important;
+}
+
 .single-business-listing .business-taxonomies ul li {
   font-size: 1.05rem;
   font-weight: 400;

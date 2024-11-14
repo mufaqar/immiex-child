@@ -542,7 +542,7 @@ a {
   letter-spacing: 0.5px;
   border: 2px solid #ec9500 !important;
   border-radius: 4px !important;
-  color: #fff;
+  color: #fff!important;
 }
 #page_banner .container_row .banner_content a.talk_lawyer:hover {
   background-color: #4868cf !important;

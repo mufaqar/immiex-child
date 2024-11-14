@@ -11,16 +11,9 @@ if (!is_page_template('temp-listing.php') && !is_singular('business-listings')) 
 	background-image: url('https://ace-law.com/wp-content/uploads/2024/02/Shireen.png');">
 			<div class="banner_content">
 				<h1><?php the_title() ?> </h1>
-				<?php
+				<p><?php
 				$value = get_field('excerpt');
-
-				if ($value) {
-					echo $value . " here is excerpt";
-				} else {
-					echo "Excerpt not found.";
-				}
-				?>
-				<p>Empower your innovation by launching your start-up in Canada. </p>
+				if( $value ) {echo $value;}?></p>
 				<a href="<?php echo home_url('/consultancy'); ?>"
 					class="vc_btn3 vc_btn3-size-lg vc_btn3-shape-rounded talk_lawyer">Talk to a Laywer</a>
 

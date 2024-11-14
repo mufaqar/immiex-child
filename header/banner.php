@@ -13,9 +13,7 @@ if (!is_page_template('temp-listing.php') && !is_singular('business-listings')) 
 				<h1><?php the_title() ?> </h1>
 				<p><?php
 				$value = get_field('excerpt');
-				if( $value ) {echo $value;}else {
-					echo "Empower your innovation by launching your start-up in Canada.";
-				}?></p>
+				if( $value ) {echo $value;}?></p>
 				<a href="<?php echo home_url('/consultancy'); ?>"
 					class="talk_lawyer">Talk to a Laywer</a>
 

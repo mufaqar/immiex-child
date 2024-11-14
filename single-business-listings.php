@@ -10,8 +10,7 @@
                 <div class="row bg_pink">
                     <!-- Post Thumbnail -->
                     <?php if (has_post_thumbnail()): ?>
-                        <div class="business-thumbnail col-md-8 pl
-                        -md-0">
+                        <div class="business-thumbnail col-md-8 pl-md-0">
                             <?php the_post_thumbnail('large', array('style' => 'width: 100%; height: auto;')); ?>
                         </div>
                     <?php endif; ?>

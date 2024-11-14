@@ -16,12 +16,12 @@
 
                 <!-- Post Content -->
                 <div class="business-content">
+                    <h3>Description:</h3>
                     <?php the_content(); ?>
                 </div>
 
                 <!-- Taxonomy Terms -->
                 <div class="business-taxonomies">
-
                     <!-- Province -->
                     <?php
                     $provinces = get_the_terms(get_the_ID(), 'province');

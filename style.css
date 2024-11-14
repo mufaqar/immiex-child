@@ -805,11 +805,6 @@ p {
   padding: 60px 15px;
 }
 
-.business_form .row .col-lg-3 {
-  padding-left: 0;
-  padding-right: 0;
-}
-
 .business_form .row {
   align-items: end;
   gap: 20px;
@@ -1122,7 +1117,7 @@ p {
     gap: 20px;
   }
   .business-listing-grid .business-item .business-title {
-    font-size: 1em;
+    font-size: 1em!important;
   }
 }
 

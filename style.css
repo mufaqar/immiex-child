@@ -240,7 +240,7 @@ a {
 
 .sidebar_content .sform_title_div {
   padding: 36px;
-  background-image: url('/dev/wp-content/themes/immiex-child/images/canada.png');
+  background-image: url('/wp-content/themes/immiex-child/images/canada.png');
   background-repeat: no-repeat;
   background-position: 90% center !important;
   background-size: contain;
@@ -1054,7 +1054,7 @@ p {
   }
 
   #page_banner .container_row {
-    background-image: url('https://ace-law.com/dev/wp-content/uploads/2024/10/Come-To-Canada-As-A-Self-Employed-Professional.png') !important;
+    background-image: url('https://ace-law.com/wp-content/uploads/2024/10/Come-To-Canada-As-A-Self-Employed-Professional.png') !important;
     background-size: 100% 55% !important;
     background-position: 40% !important;
     gap: 30px;

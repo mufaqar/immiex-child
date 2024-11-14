@@ -6,7 +6,7 @@ if (!is_page_template('temp-listing.php') && !is_singular('business-listings')) 
 ?>
 	
  <section id="page_banner" style="
-    background-image: url('https://ace-law.com/dev/wp-content/uploads/2024/10/Come-To-Canada-As-A-Self-Employed-Professional.png');">
+    background-image: url('https://ace-law.com/wp-content/uploads/2024/10/Come-To-Canada-As-A-Self-Employed-Professional.png');">
 	<div class="container_row wrapper" style="
     background-image: url('https://ace-law.com/wp-content/uploads/2024/02/Shireen.png');">	
 		<div class="banner_content">
@@ -22,10 +22,10 @@ if (!is_page_template('temp-listing.php') && !is_singular('business-listings')) 
 		</div>	
 <div class="banner_right">
     <div class="service_logos">
-		<img src="https://ace-law.com/dev/wp-content/uploads/2024/10/law-society-of-ontario-2.svg" alt="imgage" />
-        <img src="https://ace-law.com/dev/wp-content/uploads/2024/10/tla-2.svg" alt="imgage" />
-        <img src="https://ace-law.com/dev/wp-content/uploads/2024/10/oba-2.svg" alt="imgage" />
-        <img src="https://ace-law.com/dev/wp-content/uploads/2024/10/cila-1.svg" alt="imgage" />
+		<img src="https://ace-law.com/wp-content/uploads/2024/10/law-society-of-ontario-2.svg" alt="imgage" />
+        <img src="https://ace-law.com/wp-content/uploads/2024/10/tla-2.svg" alt="imgage" />
+        <img src="https://ace-law.com/wp-content/uploads/2024/10/oba-2.svg" alt="imgage" />
+        <img src="https://ace-law.com/wp-content/uploads/2024/10/cila-1.svg" alt="imgage" />
     </div>
 </div>
 </section>

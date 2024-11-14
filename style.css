@@ -849,14 +849,16 @@ p {
   font-size: 40px;
 }
 
-.single-business-listing .business-content h3 {
+.single-business-listing .business-content h3,
+.single-business-listing .business-taxonomies h3 {
   font-size: 24px;
   letter-spacing: -.5px;
   padding-top: 15px;
 }
-.single-business-listing .business-taxonomies ul li{
-font-size: 1.05rem;
-font-weight: 400;
+
+.single-business-listing .business-taxonomies ul li {
+  font-size: 1.05rem;
+  font-weight: 400;
 }
 
 /* --- Mobile --- */
@@ -1140,6 +1142,7 @@ font-weight: 400;
   .business-listing-grid .business-item .business-title {
     font-size: 1em !important;
   }
+
   .single-business-listing h1 {
     font-size: 32px;
   }

@@ -95,7 +95,7 @@
     </div>
 
     <!-- Display Results -->
-    <div class="business-listing-grid" style="display: flex; flex-wrap: wrap; gap: 20px;">
+    <div class="business-listing-grid">
         <?php
         // Check if there are posts
         if ($business_query->have_posts()):

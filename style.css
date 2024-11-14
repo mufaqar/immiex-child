@@ -808,6 +808,11 @@ p {
 .business_form .row {
   align-items: end;
 }
+.business-listing-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+}
 
 /* --- Mobile --- */
 @media only screen and (max-width: 991px) {
@@ -1075,6 +1080,11 @@ p {
   .footer_top .container_row .footer_right .footer-form .col-lg-6 {
     padding-left: 15px !important;
     padding-right: 15px !important;
+  }
+  .business-listing-grid {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
   }
 }
 

@@ -432,7 +432,7 @@ a {
   color: #0c233f;
 }
 
-a.talk_lawyer {
+/* a.talk_lawyer {
   background-color: #ec9500;
   border: 2px solid #ec9500;
   color: #fff !important;
@@ -442,12 +442,12 @@ a.talk_lawyer {
   font-weight: 700;
   letter-spacing: 0.5px;
   padding: 0 1em;
-}
+} */
 
-a.talk_lawyer:hover {
+/* a.talk_lawyer:hover {
   background-color: #4868cf !important;
   border: 2px solid #4868cf !important;
-}
+} */
 
 .vc_btn3.vc_btn3-style-custom {
   background-image: none !important;

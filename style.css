@@ -1013,6 +1013,7 @@ p {
 
   .wsmenu>.wsmenu-list>li>.wsmegamenu {
     border: solid 1px transparent !important;
+    top: 0!important;
   }
 
   .wsmenu>.wsmenu-list>li>a {

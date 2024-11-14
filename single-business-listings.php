@@ -16,7 +16,7 @@
                         </div>
                     <?php endif; ?>
                     <!-- Taxonomy Terms -->
-                    <div class="business-taxonomies col-md-4">
+                    <div class="business-taxonomies col-md-4 py-5">
                         <!-- Province -->
                         <?php
                         $provinces = get_the_terms(get_the_ID(), 'province');

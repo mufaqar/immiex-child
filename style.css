@@ -1058,7 +1058,7 @@ p {
     background-size: 100% 55% !important;
     background-position: 40% !important;
     gap: 30px;
-    padding: 0 15px;
+    padding: 0 15px; 
   }
 
   #page_banner .container_row .banner_content,

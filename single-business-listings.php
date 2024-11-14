@@ -56,7 +56,7 @@
                     </div>
                 </div>
                 <!-- Post Content -->
-                <div class="business-content">
+                <div class="business-content mt-3">
                     <h3>Description:</h3>
                     <?php the_content(); ?>
                 </div>

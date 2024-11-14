@@ -55,53 +55,11 @@
 
                     </div>
                 </div>
-
                 <!-- Post Content -->
                 <div class="business-content">
                     <h3>Description:</h3>
                     <?php the_content(); ?>
                 </div>
-
-                <!-- Taxonomy Terms -->
-                <div class="business-taxonomies">
-                    <!-- Province -->
-                    <?php
-                    $provinces = get_the_terms(get_the_ID(), 'province');
-                    if ($provinces && !is_wp_error($provinces)):
-                        echo '<h3>Province:</h3><ul>';
-                        foreach ($provinces as $province) {
-                            echo '<li>' . esc_html($province->name) . '</li>';
-                        }
-                        echo '</ul>';
-                    endif;
-                    ?>
-
-                    <!-- Business Type -->
-                    <?php
-                    $business_types = get_the_terms(get_the_ID(), 'business_type');
-                    if ($business_types && !is_wp_error($business_types)):
-                        echo '<h3>Business Type:</h3><ul>';
-                        foreach ($business_types as $business_type) {
-                            echo '<li>' . esc_html($business_type->name) . '</li>';
-                        }
-                        echo '</ul>';
-                    endif;
-                    ?>
-
-                    <!-- Industries -->
-                    <?php
-                    $industries = get_the_terms(get_the_ID(), 'industries');
-                    if ($industries && !is_wp_error($industries)):
-                        echo '<h3>Industries:</h3><ul>';
-                        foreach ($industries as $industry) {
-                            echo '<li>' . esc_html($industry->name) . '</li>';
-                        }
-                        echo '</ul>';
-                    endif;
-                    ?>
-
-                </div>
-
             </article>
 
         <?php endwhile; else: ?>
